@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\YY.NuGet.Import.Helper.1.0.0.4\build\native\YY.NuGet.Import.Helper.props" Condition="Exists('..\packages\YY.NuGet.Import.Helper.1.0.0.4\build\native\YY.NuGet.Import.Helper.props')" />
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -22,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{30366c50-0724-469e-95f2-f6a9979f0b50}</ProjectGuid>
-    <RootNamespace>NugetTest</RootNamespace>
+    <ProjectGuid>{03c31809-97f7-4f01-9fa9-f287ca125155}</ProjectGuid>
+    <RootNamespace>VCPckTest</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -140,21 +139,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="NugetTest.cpp" />
+    <ClCompile Include="VCPckTest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="VCPckTest.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
-    <Import Project="..\packages\cpprestsdk.v142.2.10.15\build\native\cpprestsdk.v142.targets" Condition="Exists('..\packages\cpprestsdk.v142.2.10.15\build\native\cpprestsdk.v142.targets')" />
-    <Import Project="..\packages\YY.NuGet.Import.Helper.1.0.0.4\build\native\YY.NuGet.Import.Helper.targets" Condition="Exists('..\packages\YY.NuGet.Import.Helper.1.0.0.4\build\native\YY.NuGet.Import.Helper.targets')" />
-    <Import Project="..\packages\tinyxml.2.8.2.3\build\native\tinyxml.targets" Condition="Exists('..\packages\tinyxml.2.8.2.3\build\native\tinyxml.targets')" />
   </ImportGroup>
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>이 프로젝트는 이 컴퓨터에 없는 NuGet 패키지를 참조합니다. 해당 패키지를 다운로드하려면 NuGet 패키지 복원을 사용하십시오. 자세한 내용은 http://go.microsoft.com/fwlink/?LinkID=322105를 참조하십시오. 누락된 파일은 {0}입니다.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\packages\cpprestsdk.v142.2.10.15\build\native\cpprestsdk.v142.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\cpprestsdk.v142.2.10.15\build\native\cpprestsdk.v142.targets'))" />
-    <Error Condition="!Exists('..\packages\YY.NuGet.Import.Helper.1.0.0.4\build\native\YY.NuGet.Import.Helper.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\YY.NuGet.Import.Helper.1.0.0.4\build\native\YY.NuGet.Import.Helper.props'))" />
-    <Error Condition="!Exists('..\packages\YY.NuGet.Import.Helper.1.0.0.4\build\native\YY.NuGet.Import.Helper.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\YY.NuGet.Import.Helper.1.0.0.4\build\native\YY.NuGet.Import.Helper.targets'))" />
-    <Error Condition="!Exists('..\packages\tinyxml.2.8.2.3\build\native\tinyxml.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\tinyxml.2.8.2.3\build\native\tinyxml.targets'))" />
-  </Target>
 </Project>
