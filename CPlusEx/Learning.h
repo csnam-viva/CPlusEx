@@ -38,7 +38,7 @@ public:
 
 	void A03_BYTE_toWORD();
 
-	void JSONTest();
+	void StrintTest();
 	
 	
 

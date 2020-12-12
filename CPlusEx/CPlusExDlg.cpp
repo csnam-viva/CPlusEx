@@ -192,10 +192,11 @@ void CCPlusExDlg::OnBnClickedBtnbind2()
 
 }
 
-#include "json/json.h"
+
 
 void CCPlusExDlg::OnBnClickedBtnbind3()
 {
 	Learning oo;
 	oo.A03_BYTE_toWORD();
+	oo.StrintTest();
 }

@@ -2,7 +2,7 @@
 #include "Learning.h"
 #include "CUtil.h"
 #include <functional>
-
+#include <sstream>
 int some_fn(string str)
 {
 	CUtil::csDebugOutput("some fund %s", str.c_str());
@@ -264,10 +264,34 @@ void Learning::A03_BYTE_toWORD()
 }
 
 
-//#include "json/"
-
-void Learning::JSONTest()
+using namespace std;
+#include <fstream>
+void Learning::StrintTest()
 {
+	std::stringstream aa;
+	aa << "aaaaaaa:" << 10;
+	string aa1= aa.str();
+	OutputDebugString(aa1.c_str());
+	std::stringstream ab("우리나라는");
 
+	std::ifstream in("한글읽기.txt");
+	std::ifstream in2("han.txt");
+	std::string s;
 
+	if (in.is_open()) {
+		in >> s;
+
+		TRACE("%s",s.c_str());
+		dbg::out() << "in Read:" << s.c_str() << endl;
+		
+	}
+	if (in2.is_open()) {
+		in2 >> s;
+		dbg::out() << " read " << in2.rdbuf() << endl;
+		TRACE("%s", s.c_str());
+	}
+
+	in.close();
+	in2.close();
+	
 }
