@@ -35,4 +35,7 @@ public:
 	afx_msg void OnBnClickedBtnbind01();
 	afx_msg void OnBnClickedBtnbind2();
 	afx_msg void OnBnClickedBtnbind3();
+	afx_msg void OnBnClickedBtnbind4();
+	afx_msg void OnBnClickedBtnbind5();
+	afx_msg void OnBnClickedBtneffectmodern();
 };

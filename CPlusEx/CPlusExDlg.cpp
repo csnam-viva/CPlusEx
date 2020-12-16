@@ -70,6 +70,9 @@ BEGIN_MESSAGE_MAP(CCPlusExDlg, CDialogEx)
 	ON_BN_CLICKED(IDC_BtnBind01, &CCPlusExDlg::OnBnClickedBtnbind01)
 	ON_BN_CLICKED(IDC_BtnBind2, &CCPlusExDlg::OnBnClickedBtnbind2)
 	ON_BN_CLICKED(IDC_BtnBind3, &CCPlusExDlg::OnBnClickedBtnbind3)
+	ON_BN_CLICKED(IDC_BtnBind4, &CCPlusExDlg::OnBnClickedBtnbind4)
+	ON_BN_CLICKED(IDC_BtnBind5, &CCPlusExDlg::OnBnClickedBtnbind5)
+	ON_BN_CLICKED(IDC_BtnEffectModern, &CCPlusExDlg::OnBnClickedBtneffectmodern)
 END_MESSAGE_MAP()
 
 
@@ -199,4 +202,36 @@ void CCPlusExDlg::OnBnClickedBtnbind3()
 	Learning oo;
 	oo.A03_BYTE_toWORD();
 	oo.StrintTest();
+}
+
+
+#include "song.h"
+#include "LearnSmartPointer.h"
+void CCPlusExDlg::OnBnClickedBtnbind4()
+{
+	song song;
+	song.test_blanks();
+
+	LearnSmartPointer exam01;
+	exam01.SmartPonterDemo2();
+
+
+
+	exam01.SmartPonterDemo3();
+
+}
+
+
+void CCPlusExDlg::OnBnClickedBtnbind5()
+{
+	LearnSmartPointer exam02;
+	exam02.SharePinterDomo1();
+}
+
+#include "EffectiveModern.h"
+void CCPlusExDlg::OnBnClickedBtneffectmodern()
+{
+	EffectiveModern em;
+	//em.A1_one();
+	em.A2_automic();
 }

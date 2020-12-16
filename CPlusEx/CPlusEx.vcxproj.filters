@@ -13,6 +13,21 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="exam01">
+      <UniqueIdentifier>{c6dfe02d-df83-404a-9c19-820c46a4a02b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pImpl">
+      <UniqueIdentifier>{4d9593d3-1406-465d-8b57-ce3505627daa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="exam01\e">
+      <UniqueIdentifier>{ab00796b-9469-4ee5-8319-33ecaff5f01f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="exam02_shared_ptr">
+      <UniqueIdentifier>{0cedf399-b7b1-4241-b962-0f751b405e15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="exam03">
+      <UniqueIdentifier>{91997e69-f062-41ee-bb95-4b24f56d2dc7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CPlusEx.h">
@@ -45,6 +60,24 @@
     <ClInclude Include="debug.h">
       <Filter>소스 파일</Filter>
     </ClInclude>
+    <ClInclude Include="LearnSmartPointer.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="song.h">
+      <Filter>exam01</Filter>
+    </ClInclude>
+    <ClInclude Include="LearnPimpl.h">
+      <Filter>pImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="Widget.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="LearnShared.h">
+      <Filter>exam02_shared_ptr</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectiveModern.h">
+      <Filter>exam03</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CPlusEx.cpp">
@@ -61,6 +94,24 @@
     </ClCompile>
     <ClCompile Include="Learning.cpp">
       <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="LearnSmartPointer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="song.cpp">
+      <Filter>exam01</Filter>
+    </ClCompile>
+    <ClCompile Include="LearnPimpl.cpp">
+      <Filter>pImpl</Filter>
+    </ClCompile>
+    <ClCompile Include="Widget.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="LearnShared.cpp">
+      <Filter>exam02_shared_ptr</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectiveModern.cpp">
+      <Filter>exam03</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

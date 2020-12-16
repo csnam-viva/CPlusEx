@@ -256,7 +256,7 @@ void Learning::A03_BYTE_toWORD()
 	//trc << "dwSize: " << dwsize << "\n";
 	string area = "0.002, 0.003, 0.701,0.801";
 	float v_f[4] = { 0,0,0,0 };
-	int n= sscanf(area.c_str(), "%f,%f,%f,%f", &v_f[0], &v_f[1], &v_f[2], &v_f[3]);
+	int n = sscanf_s(area.c_str(),"%f,%f,%f,%f", &v_f[0], &v_f[1], &v_f[2], &v_f[3]);
 
 	TRACE("f =%f, %f, %f, %f \n", v_f[0], v_f[1], v_f[2], v_f[3]);
 	

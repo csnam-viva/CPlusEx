@@ -10,6 +10,10 @@
 #define IDC_BtnBind01                   1000
 #define IDC_BtnBind2                    1001
 #define IDC_BtnBind3                    1002
+#define IDC_BtnBind4                    1003
+#define IDC_BtnBind5                    1004
+#define IDC_BtnBind6                    1005
+#define IDC_BtnEffectModern             1005
 
 // Next default values for new objects
 // 

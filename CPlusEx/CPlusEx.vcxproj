@@ -30,7 +30,6 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
     <UseOfMfc>Dynamic</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -95,6 +94,7 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>
       </AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp14</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -193,24 +193,36 @@
     <ClInclude Include="CPlusExDlg.h" />
     <ClInclude Include="CUtil.h" />
     <ClInclude Include="debug.h" />
+    <ClInclude Include="EffectiveModern.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="Learning.h" />
+    <ClInclude Include="LearnPimpl.h" />
+    <ClInclude Include="LearnShared.h" />
+    <ClInclude Include="LearnSmartPointer.h" />
     <ClInclude Include="ostream.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="song.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="Widget.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CPlusEx.cpp" />
     <ClCompile Include="CPlusExDlg.cpp" />
     <ClCompile Include="CUtil.cpp" />
+    <ClCompile Include="EffectiveModern.cpp" />
     <ClCompile Include="Learning.cpp" />
+    <ClCompile Include="LearnPimpl.cpp" />
+    <ClCompile Include="LearnShared.cpp" />
+    <ClCompile Include="LearnSmartPointer.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="song.cpp" />
+    <ClCompile Include="Widget.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="CPlusEx.rc" />
